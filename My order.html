@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Product Detail page | Ecommerce website</title>
+
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/9a26e4f060.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navigation  -->
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><span>E</span>-<span>Farmkart</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="My order.html">My Orders</a></li>
+          <li><a href="Account.html">Account</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+
+      <div class="card-container">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/watermelon.png" alt="">
+                        <div>
+                            <p>Watermelon</p>
+                            <small>Price:&#8377 50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>Product name</td>
+                <td><input type="text" value="1"></td>
+                <td>&#8377 50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/apple.png" alt="">
+                        <div>
+                            <p>Apple</p>
+                            <small>Price:&#8377 40.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>Product name</td>
+                <td><input type="text" value="1"></td>
+                <td>&#8377 50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/orange.png" alt="">
+                        <div>
+                            <p>Orange</p>
+                            <small>Price:&#8377 60.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>Product name</td>
+                <td><input type="text" value="1"></td>
+                <td>&#8377 50.00</td>
+            </tr>
+
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>&#8377 120.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>&#8377 40.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>&#8377 160.00</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+
+    
+
+   
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- About Section -->
+          <div class="footer-section about">
+            <h3>About eFarmKart</h3>
+            <p class="white">eFarmKart is your trusted platform for buying fresh, organic agricultural products directly from local farmers. We promote sustainability and support small-scale farmers.</p>
+          </div>
+      
+          <!-- Links Section -->
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="My order.html">My Orders</a></li>
+              <li><a href="Account.html">Account</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Section -->
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p class="white"><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+            <p class="white"><i class="fa-solid fa-envelope"></i> support@efarmkart.com</p>
+            <p class="white"><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2024 eFarmKart. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+      
+        hamburger.addEventListener('click', () => {
+          menu.classList.toggle('active');
+        });
+      </script>
+      
+
+      <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var ProImg = document.getElementsByClassName("pro-img");
+          ProImg[0].onclick = function(){
+            ProductImg.src = ProImg[0].src
+          }
+          ProImg[1].onclick = function(){
+            ProductImg.src = ProImg[1].src
+          }
+          ProImg[2].onclick = function(){
+            ProductImg.src = ProImg[2].src
+          }
+      </script>
+      
+    </div>
+  </body>
+</html>
